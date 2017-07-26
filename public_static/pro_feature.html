@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>Create Meeting Invitations</title>
+    
+    <link type="text/css" rel="stylesheet" href="pro_feature.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+    <div id="left">
+        <h1>Create A Meeting</h1>
+        <form>
+            <pre>
+Name of Company : <input id="comp_inp" type = "text" placeholder="Your full name"><br>
+Your Name       : <input id="name_inp" type = "text" placeholder="Your full name"><br>
+Subject         : <input id="sub_inp"  type = "text" placeholder="Your full name"><br>
+Message Content : <input id="mess_inp" type = "text" placeholder="Your full name"><br>
+Organiser       : <input id="org_inp"  type = "text" placeholder="Your full name"><br>
+        </pre>
+        </form>
+        <center>
+        <button id="codeshare">Generate Online CodeSharing Link</button><br><br>
+        <button id="maps">Attatch Location on Map</button><br><br>
+        <button id="preview">Preview</button>
+        </center>
+    </div>
+    
+    <div id="right">
+        <h2 id="company">Company Name</h2>
+        <div id="card">
+            <center>
+                <img src="person.jpg">
+                <h2 id="heading">'Your Name' has invited you to:<br><span style="color: #EE263B">'Subject'</span></h2>
+            </center>    
+            <p id="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+            </p>
+            <center>
+            <button>Reply Now</button>    
+            </center>
+            <h4 id="organiser">Message Organiser</h4>
+        </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="pro_feature.js"></script>
+</body>
+</html>

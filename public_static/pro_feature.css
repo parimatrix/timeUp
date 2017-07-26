@@ -1,0 +1,79 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background: #EFEFF2;
+    display: flex;
+    flex-wrap: no-wrap;
+}
+
+#left {
+    color: white;
+    font-size: 1.5em;
+    padding-left: 50px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    width: 40%;
+    min-width : 500px;
+    background-color: #0F1A26;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: inline-block;
+}
+#left h1 {
+    text-transform: uppercase;
+    color: white;
+}
+#left input {
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    font-size: 20px;
+    width: 300px;
+    padding: 10px 10px;
+    background: white;
+    color: #FF3333;
+    margin-top: 20px;
+}
+#right {
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    width: 53%;
+    min-width: 500px;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+button {
+    cursor: pointer;
+    border: none;
+    background-color: #EE263B;
+    color: white;
+    font-size: 25px;
+    padding: 10px 20px;
+    box-shadow:  rgba(0, 0, 0, 0.61) 3px 3px 6px;
+    border-radius: 5px;
+}
+#company {
+    text-align: right;
+    color: #adadad;
+    padding-right: 30px;
+}
+#card {
+    overflow: auto;
+    width: 410px;
+    height: 550px;
+    background: white;
+    margin: 20px auto;
+    box-shadow: rgba(0, 0, 0, 0.33) 7px 7px 10px 0px;
+    padding: 0 20px;
+}
+#card img {
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+#heading {
+    color: #0C0E22;
+}

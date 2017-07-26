@@ -1,0 +1,172 @@
+<html>
+<head>
+	<title>TimeUp</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+<script>
+    var x = JSON.parse(localStorage.getItem("current_user"));
+    if(x === null)
+        window.location.replace('index.html');
+</script>
+<p id="invalid">Notification Sent! </p>
+    <div id="google">
+        <h1 id ="gg">Hi </h1>
+        <center>
+            <img src="google.png">
+            <input id="gsearch" type = "text" onkeydown="if (event.keyCode == 13 || event.which == 13) { window.open('http://www.google.com/search?q=' + encodeURIComponent(document.getElementById('gsearch').value));}">
+            <button onclick="window.open('http://www.google.com/search?q=' + encodeURIComponent(document.getElementById('gsearch').value));">Search</button>
+            <a href = "index.html"><button onclick = "localStorage.setItem('current_user' , null);" id="logout">Log Out</button></a>
+
+        </center>
+    </div>
+    <div id="content">
+        <div id= "outer_karle"><div id="karle">
+            <p>
+            Prioritize your todo list<br>
+            Three items to do today:
+            </p>
+            <input type = "text" placeholder="to do ..." id="task1"><i id="tick1" class="fa fa-check ticks" aria-hidden="true"></i><br>
+            <input type = "text" placeholder="to do ..." id="task2"><i id="tick2" class="fa fa-check ticks" aria-hidden="true"></i><br>
+            <input type = "text" placeholder="to do ..." id="task3"><i id="tick3" class="fa fa-check ticks" aria-hidden="true"></i><br>
+            <center><button id="lock">Lock It</button></center>
+            <div id="instructions">
+                Add three items to the list in the morning !
+            <ol>
+                <li>Complete first item.</li>
+                <li>Complete second item.</li>
+                <li>Complete third item.</li>
+            </ol>
+                Lower stress and increase productivity !<br>Repeat.
+            </div>
+        </div>
+        <div id="facebook"><center><button id="break">Want a break ?</button><br>
+            <i onclick = "window.open('http://www.fb.com')" class="fa fa-facebook-square" aria-hidden="true"></i>
+            <i onclick = "window.open('http://www.youtube.com')" class="fa fa-youtube-play" aria-hidden="true"></i>
+            <i onclick = "window.open('http://www.twitter.com')" class="fa fa-twitter-square" aria-hidden="true"></i>
+            <i onclick = "window.open('https://floating-basin-64199.herokuapp.com/')" class="fa fa-headphones" aria-hidden="true"></i>
+            <!--<i style = "color: #0C0E22" class="fa fa-smile-o" aria-hidden="true" id="smile"></i>-->
+           <br> <img src="005.png" id="smile">
+        </center></div>
+        <div id="codechef">
+            Problem of the Day<br><span>Powered by CodeChef</span>
+            <div id="floatingCirclesG">
+                <div class="f_circleG" id="frotateG_01"></div>
+                <div class="f_circleG" id="frotateG_02"></div>
+                <div class="f_circleG" id="frotateG_03"></div>
+                <div class="f_circleG" id="frotateG_04"></div>
+                <div class="f_circleG" id="frotateG_05"></div>
+                <div class="f_circleG" id="frotateG_06"></div>
+                <div class="f_circleG" id="frotateG_07"></div>
+                <div class="f_circleG" id="frotateG_08"></div>
+            </div>
+            <p></p>
+        </div>
+        </div>
+      
+        <div id="peerboard">
+            <p id="peer">Postboard</p>
+            
+            <button id="main_create">Create Board</button>
+            <div id="innerpeerboard">
+                      <div class="board">
+                <p class = "heading">Parikansh Ahluwalia</p>
+                <p class = "message">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p class = "links">Link : </p>
+                <b><p style="display : inline; color: #E64032;font-size : 20px">Help Needed</p></b>
+                <p class="likes"><i class="fa fa-plus upvote" aria-hidden="true"></i>&nbsp;&nbsp;<i class="fa fa-minus downvote" aria-hidden="true"></i></p>
+            </div>
+            <!--<div class="board">
+                <p class = "heading">Parikansh Ahluwalia</p>
+                <p class = "message">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p class = "links">Link : </p>
+                <p class="likes"><i class="fa fa-plus upvote" aria-hidden="true"></i>&nbsp;&nbsp;<i class="fa fa-minus downvote" aria-hidden="true"></i></p>
+            </div>
+            <div class="board">
+                <p class = "heading">Parikansh Ahluwalia</p>
+                <p class = "message">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p class = "links">Link : </p>
+                <p class="likes"><i class="fa fa-plus upvote" aria-hidden="true"></i>&nbsp;&nbsp;<i class="fa fa-minus downvote" aria-hidden="true"></i></p>
+            </div>
+            <div class="board">
+                <p class = "heading">Parikansh Ahluwalia</p>
+                <p class = "message">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p class = "links">Link : </p>
+                <p class="likes"><i class="fa fa-plus upvote" aria-hidden="true"></i>&nbsp;&nbsp;<i class="fa fa-minus downvote" aria-hidden="true"></i></p>
+            </div>
+    -->
+            </div>
+        </div>
+        <div id="outer-profile">
+        <div id="profilee">
+            <h3>Points</h3>
+        <ul id="points">
+            <li><span id = "n1" class = "number">23</span><br>in last week.</li>
+            <li><span id = "n2" class = "number">123</span><br>Total Points</li>
+            <li><span id = "n3" class = "number">3</span><br>Current Rank</li>
+        </ul>
+            <center>
+                <button id="leaderboardbutton">View Leaderboard</button>
+            </center>
+        </div>
+        <div id="profile">
+            <h3>Notifications</h3>
+        <ul id="notifications">
+             <li><a href="#">Parikansh has claimed points for his edit.</a><button>Rate Now</button></li>
+            <li><a href="#">Parikansh has claimed points for his edit.</a><button>Rate Now</button></li>
+             <li><a href="#">Parikansh has claimed points for his edit.</a><button>Rate Now</button></li>
+              
+            <a href="#"><li>Parikansh has claimed points for his edit.</li></a>
+             <a href="#"><li>Parikansh has claimed points for his edit.</li></a>
+        </ul>
+        </div>
+            <div id="event">
+                <a href="pro_feature.html"><button>Create Event Invitation</button></a>
+            </div>
+    </div>
+    </div>
+    
+    <div id="boardcreator">
+        <div class="board creator">
+        <input id="mymessage" type="text" id="createmessage" placeholder="Message Content"><br>
+            <p>If you want us to create a CODESHARE link follow the steps:<br>
+            1. Click on the Create Link button<br>2. Copy the link to which you will be directed and paste it in the link input box !</p>
+         <button id="linkcreator" onclick="window.open('http://www.codeshare.io/new')">Create Link</button>
+            <input id="mylink" type="text" id="createlink" placeholder="url address"><br>
+        <button id="final_board">Create Board</button>
+            </div>
+    </div>
+    
+    <div id="ratingbox">
+        <h3>Enter the rating for the edit on the post:</h3> 
+    <input id="rateinput" type="text" placeholder = "An integer from 0-10" onkeypress ="if(event.keyCode == 13) sendrating(this)" >
+    </div>
+   <!-- <div id="test_time">
+        <div id="top_bar">
+            <h2>KeyTime</h2>
+        </div>
+    </div>
+    -->
+    <div id="overlay"></div>
+<div id="outlead">
+<div id="leaderboard">
+    <center> <h1>Leaderboard</h1></center>
+   <!-- <table id="leadtable">
+        <tr><td class="rank">1</td><td class="name">Parikansh</td> <td></td></tr>
+        <tr><td class="rank">1</td><td class="name">Parikansh</td> <td></td></tr>
+        <tr><td class="rank">1</td><td class="name">Parikansh</td> <td></td></tr>
+        <tr><td class="rank">1</td><td class="name">Parikansh</td> <td></td></tr>
+    </table>-->
+</div></div>
+<i id = "closelead" class="fa fa-times" aria-hidden="true"></i>
+<i id = "closerating" class="fa fa-times" aria-hidden="true"></i>
+    <script src="jquery.js"></script>
+    <script src="todo.js"></script>
+    <script src="boards.js"></script>
+    <script src="points.js"></script>
+    <script src="leaderboard.js"></script>
+</body>
+</html>
